@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { specials } from "../src/data";
+import { specials } from "../../../data";
 import SpecialButton from "./SpecialButton";
 
 //import any components needed
@@ -18,3 +18,5 @@ const Specials = () => {
     </div>
   );
 };
+
+export default Specials;

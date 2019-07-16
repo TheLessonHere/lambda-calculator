@@ -6,11 +6,8 @@ import "./App.css";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-import NumberButton from "../src/components/ButtonComponents/NumberButtons/NumberButton";
 import Numbers from "../src/components/ButtonComponents/NumberButtons/Numbers";
-import OperatorButton from "../src/components/ButtonComponents/OperatorButtons/OperatorButton";
 import Operators from "../src/components/ButtonComponents/OperatorButtons/Operators";
-import SpecialButton from "../src/components/ButtonComponents/SpecialButtons/SpecialButton";
 import Specials from "../src/components/ButtonComponents/SpecialButtons/Specials";
 import Display from "./components/DisplayComponents/Display";
 
@@ -28,7 +25,11 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        {/* STEP 4 - Render your components here and be sure to properly import/export all files */
+        <Display numberComp= {<Numbers onClick={() => setNumberState()}></Numbers>} 
+        operatorComp= {<Operators onClick={() => setOperatorState()}></Operators>}
+        specialComp= {<Specials onClick={() => setSpecialState()}></Specials>}></Display>
+        }
       </div>
     </div>
   );
